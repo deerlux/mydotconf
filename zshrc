@@ -3,6 +3,7 @@ HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
 setopt appendhistory autocd beep extendedglob nomatch notify 
+
 bindkey -e
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
@@ -24,3 +25,12 @@ setopt cdablevars
 #cq-med=/home/lxq/prog/python/cq-med
 #tessdata=/usr/share/tessdata
 export PYTHONPATH='/home/lxq/prog/python'
+
+# prevent from putting duplicate lines in the history
+setopt HIST_IGNORE_DUPS
+
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+
