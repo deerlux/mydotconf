@@ -1,0 +1,15 @@
+[user]
+	email = deerlux@163.com
+	username = deerlux
+	name = deerlux
+[color]
+	ui = true
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+[push]
+	default = simple
+[core]
+	quotepath = false
+    editor=vim
